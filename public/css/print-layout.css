@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Proxima Nova Thin;
+    src: url('./fonts/Proxima Nova Thin.otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Proxima Nova Regular;
+    src: url('./fonts/proxima-nova-regular.otf');
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+ font-family: 'Proxima Nova Regular' !important;
+  font-weight: 500;
+  position: relative;
+  width: 19.59cm;  
+  height: 25.9cm; 
+  margin: 0 auto; 
+  color: #001028;
+  background: #FFFFFF; 
+  font-family: Arial, sans-serif; 
+  font-size: 15px; 
+  font-family: Arial;
+}
+.warehouse_name{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+#logo {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#logo img {
+  width: 90px;
+}
+
+h3 {
+  border-top: 1px solid  #5D6975;
+  border-bottom: 1px solid  #5D6975;
+  color: #000;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px 0;
+  background: #F5F5F5;
+}
+
+#company {
+  float: center;
+  text-align: center;
+}
+#upper_right_info {
+  float: right;
+}
+
+#upper_right_info span {
+  text-align: right;
+  width: 120px;
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 1em;
+}
+#upper_left_info {
+  float: left;
+  padding: 0;
+}
+
+#upper_left_info span {
+  text-align: left;
+  width: 120px;
+  display: inline-block;
+  font-size: 1em;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.lower_information tr:nth-child(2n-1) td {
+  background: #F5F5F5;
+}
+
+table th {
+  padding: 5px 20px;
+  color: #5D6975;
+  border-bottom: 1px solid black;        
+  font-weight: bold;
+  color: black;
+}
+
+table th.sku{
+  text-align: left;
+}
+
+table th.desc,
+table th.qty,
+table th.rate
+{
+text-align: center;
+}
+
+table td {
+  padding: 15px;
+  text-align: right;
+}
+
+table td.sku{
+	text-align: left;
+}
+
+table td.desc , 
+table td.rate,
+table td.qty{
+  text-align: center;
+}
+
+table th.total{
+  text-align: right;
+}
+
+table td.total {
+  text-align: right;
+}
+
+table td.subtotal {
+  border-top: 1px solid #000;
+}
+
+table td.grand {
+  border-top: 1px solid #000;
+  font-weight: bold;
+}
