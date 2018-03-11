@@ -19,7 +19,7 @@
 
 
   </head>
-  <body class="">
+  <body class="sbody" style="background-color: #170f31;">
 
    <div  id="app" class="app layout-fixed-header">
 
@@ -30,35 +30,11 @@
 
         <!-- content panel -->
         <div class="main-panel">
-          <!-- top header -->
-          <div class="header navbar">
-            <div class="brand visible-xs">
-              <!-- toggle offscreen menu -->
-              <div class="toggle-offscreen">
-                <a href="javascript:;" class="hamburger-icon visible-xs" data-toggle="offscreen" data-move="ltr">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </a>
-          </div>
-          <!-- /toggle offscreen menu -->
-          <!-- logo -->
-          <a class="brand-logo">
-            <span>WAREVENT</span>
-        </a>
-        <!-- /logo -->
-    </div>
   
-
     @yield('content')
-
 </div>
-<!-- /main area -->
-</div>
-<!-- /content panel -->
 {{-- </div> --}}
 
-{{-- @include('layouts.footer') --}}
 
 </div>
 

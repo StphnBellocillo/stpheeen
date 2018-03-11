@@ -26,19 +26,16 @@
     <ul class="nav">
       <li>
         <router-link to="/Photography">
-          <i class="icon-home"></i>
           <span>Photography</span>
         </router-link>
       </li>
       <li>
         <router-link to="/About">
-          <i class="icon-home"></i>
           <span>About</span>
         </router-link>
       </li>
       <li>
         <router-link to="/Contacts">
-          <i class="icon-home"></i>
           <span>Contacts</span>
         </router-link>
       </li>

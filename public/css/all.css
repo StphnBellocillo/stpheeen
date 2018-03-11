@@ -14401,7 +14401,7 @@ figure:hover:before {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+
   -webkit-font-smoothing: antialiased; }
 
 .layout-small-menu .main-panel > .header .icon-toggle-sidebar:before {
@@ -14622,10 +14622,10 @@ figure:hover:before {
       clear: both; }
   .main-panel .page-title {
 
-    color:#464446;
+    color:#ffffff;
     font-family: 'Proxima Nova','Arial';
     background-color: #fff;
-    border-bottom: 0.0625rem solid #e4e4e4;
+    border-bottom: 0.0625rem solid #ffffff;
     text-transform: uppercase;
     /*padding: 0.3125rem 0.75rem;*/
     padding: 15px;

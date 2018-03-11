@@ -2763,10 +2763,10 @@ footer.session-footer {
 
 @media (max-width: 767px) {
   .layout-right-sidebar .brand .toggle-offscreen {
-    left: auto;
+    top: auto;
     right: 0; }
   .layout-right-sidebar .brand .toggle-chat {
-    left: 0;
+    top: 0;
     right: auto; } }
 
 /* Boxed layout widths */
