@@ -9,8 +9,9 @@ export default new VueRouter({
     mode: 'history',
     base: __dirname,
       routes: [
+        { path: '/Photography', component: Photography },
         { path: '/About', component: About },
-        { path: '/Contacts', component: Contacts },
-        { path: '/photography', component: Photography }
+        { path: '/Contacts', component: Contacts }
+
       ]
 });

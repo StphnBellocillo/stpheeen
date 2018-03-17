@@ -16608,7 +16608,7 @@ if (inBrowser && window.Vue) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(17);
-module.exports = __webpack_require__(62);
+module.exports = __webpack_require__(64);
 
 
 /***/ }),
@@ -16634,6 +16634,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_select___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue_select__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vue_toasted__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vue_toasted___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_vue_toasted__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_vue_tree_navigation__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_vue_tree_navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_vue_tree_navigation__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_vue2_scrollspy__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_vue2_scrollspy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_vue2_scrollspy__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -16645,6 +16649,8 @@ __webpack_require__(18);
 window.linq = __webpack_require__(41);
 
 window.Vue = __webpack_require__(42);
+
+
 
 
 
@@ -16675,6 +16681,8 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_4_vue_sweetalert___default.a);
 Vue.use(__WEBPACK_IMPORTED_MODULE_5_vue_good_table___default.a);
 Vue.use(__WEBPACK_IMPORTED_MODULE_7__websanova_vue_upload___default.a);
 Vue.use(__WEBPACK_IMPORTED_MODULE_8_vue_select___default.a);
+Vue.use(__WEBPACK_IMPORTED_MODULE_10_vue_tree_navigation___default.a);
+Vue.use(__WEBPACK_IMPORTED_MODULE_11_vue2_scrollspy___default.a);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -16692,9 +16700,9 @@ var Contacts = function Contacts(resolve) {
   return __webpack_require__.e/* require */(1/* duplicate */).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(14)]; ((resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
 };
 
-Vue.component('sidebar-panel', __webpack_require__(56));
+Vue.component('sidebar-panel', __webpack_require__(58));
 
-Vue.component('example-component', __webpack_require__(59));
+Vue.component('example-component', __webpack_require__(61));
 
 new Vue({
 
@@ -52895,7 +52903,7 @@ var Photography = function Photography(resolve) {
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
   mode: 'history',
   base: __dirname,
-  routes: [{ path: '/About', component: About }, { path: '/Contacts', component: Contacts }, { path: '/photography', component: Photography }]
+  routes: [{ path: '/Photography', component: Photography }, { path: '/About', component: About }, { path: '/Contacts', component: Contacts }]
 }));
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, "/"))
 
@@ -71075,12 +71083,358 @@ e.target.composing||(t.search=e.target.value)}}}),t._v(" "),n("button",{directiv
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
+!function(e,t){ true?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.VueTreeNavigation=t():e.VueTreeNavigation=t()}("undefined"!=typeof self?self:this,function(){return function(e){function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var n={};return t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=5)}([function(e,t){function n(e,t){var n=e[1]||"",o=e[3];if(!o)return n;if(t&&"function"==typeof btoa){var a=r(o);return[n].concat(o.sources.map(function(e){return"/*# sourceURL="+o.sourceRoot+e+" */"})).concat([a]).join("\n")}return[n].join("\n")}function r(e){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(e))))+" */"}e.exports=function(e){var t=[];return t.toString=function(){return this.map(function(t){var r=n(t,e);return t[2]?"@media "+t[2]+"{"+r+"}":r}).join("")},t.i=function(e,n){"string"==typeof e&&(e=[[null,e,""]]);for(var r={},o=0;o<this.length;o++){var a=this[o][0];"number"==typeof a&&(r[a]=!0)}for(o=0;o<e.length;o++){var i=e[o];"number"==typeof i[0]&&r[i[0]]||(n&&!i[2]?i[2]=n:n&&(i[2]="("+i[2]+") and ("+n+")"),t.push(i))}},t}},function(e,t,n){function r(e){for(var t=0;t<e.length;t++){var n=e[t],r=d[n.id];if(r){r.refs++;for(var o=0;o<r.parts.length;o++)r.parts[o](n.parts[o]);for(;o<n.parts.length;o++)r.parts.push(a(n.parts[o]));r.parts.length>n.parts.length&&(r.parts.length=n.parts.length)}else{for(var i=[],o=0;o<n.parts.length;o++)i.push(a(n.parts[o]));d[n.id]={id:n.id,refs:1,parts:i}}}}function o(){var e=document.createElement("style");return e.type="text/css",f.appendChild(e),e}function a(e){var t,n,r=document.querySelector('style[data-vue-ssr-id~="'+e.id+'"]');if(r){if(v)return h;r.parentNode.removeChild(r)}if(g){var a=p++;r=c||(c=o()),t=i.bind(null,r,a,!1),n=i.bind(null,r,a,!0)}else r=o(),t=s.bind(null,r),n=function(){r.parentNode.removeChild(r)};return t(e),function(r){if(r){if(r.css===e.css&&r.media===e.media&&r.sourceMap===e.sourceMap)return;t(e=r)}else n()}}function i(e,t,n,r){var o=n?"":r.css;if(e.styleSheet)e.styleSheet.cssText=m(t,o);else{var a=document.createTextNode(o),i=e.childNodes;i[t]&&e.removeChild(i[t]),i.length?e.insertBefore(a,i[t]):e.appendChild(a)}}function s(e,t){var n=t.css,r=t.media,o=t.sourceMap;if(r&&e.setAttribute("media",r),o&&(n+="\n/*# sourceURL="+o.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(o))))+" */"),e.styleSheet)e.styleSheet.cssText=n;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(n))}}var u="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!u)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var l=n(12),d={},f=u&&(document.head||document.getElementsByTagName("head")[0]),c=null,p=0,v=!1,h=function(){},g="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());e.exports=function(e,t,n){v=n;var o=l(e,t);return r(o),function(t){for(var n=[],a=0;a<o.length;a++){var i=o[a],s=d[i.id];s.refs--,n.push(s)}t?(o=l(e,t),r(o)):o=[];for(var a=0;a<n.length;a++){var s=n[a];if(0===s.refs){for(var u=0;u<s.parts.length;u++)s.parts[u]();delete d[s.id]}}}};var m=function(){var e=[];return function(t,n){return e[t]=n,e.filter(Boolean).join("\n")}}()},function(e,t){e.exports=function(e,t,n,r,o,a){var i,s=e=e||{},u=typeof e.default;"object"!==u&&"function"!==u||(i=e,s=e.default);var l="function"==typeof s?s.options:s;t&&(l.render=t.render,l.staticRenderFns=t.staticRenderFns,l._compiled=!0),n&&(l.functional=!0),o&&(l._scopeId=o);var d;if(a?(d=function(e){e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,e||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),r&&r.call(this,e),e&&e._registeredComponents&&e._registeredComponents.add(a)},l._ssrRegister=d):r&&(d=r),d){var f=l.functional,c=f?l.render:l.beforeCreate;f?(l._injectStyles=d,l.render=function(e,t){return d.call(t),c(e,t)}):l.beforeCreate=c?[].concat(c,d):[d]}return{esModule:i,exports:s,options:l}}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(13),o=function(e){return e&&e.__esModule?e:{default:e}}(r);t.default={data:function(){return{closed:this.level>this.defaultOpenLevel}},props:{level:{type:Number,required:!0},defaultOpenLevel:{type:Number,required:!0}},computed:{classes:function(){return{closed:this.closed}}},watch:{defaultOpenLevel:function(){this.closed=this.level>this.defaultOpenLevel}},methods:{toggle:function(){this.closed=!this.closed}},components:{"navigation-toggle":o.default}}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={props:{isClosed:{type:Boolean,required:!0}},computed:{classes:function(){return{closed:this.isClosed}}}}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(6),o=function(e){return e&&e.__esModule?e:{default:e}}(r);t.default=o.default},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(7),o=function(e){return e&&e.__esModule?e:{default:e}}(r);o.default.install=function(e){e.component(o.default.name,o.default)},t.default=o.default},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(8),o=function(e){return e&&e.__esModule?e:{default:e}}(r);n(19);var a={name:"vue-tree-navigation",data:function(){return{classes:["tree-navigation"]}},props:{items:{type:Array,required:!0},defaultOpenLevel:{type:Number,default:0}},computed:{itemsWithMetadata:function(){var e=this,t=JSON.parse(JSON.stringify(e.items));return o.default.insertMetadataToItems(t)}},render:function(e){var t=this,n=e("ul",o.default.generateLevel(e,t.itemsWithMetadata,1,t.defaultOpenLevel));return e("div",{class:t.classes},[n])}};t.default=a},function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}function o(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}function a(e,t){if(void 0===t.route&&void 0===t.element)return t.name;var n=void 0,r=void 0,o=void 0,a=void 0;return t.meta.pathType===m&&(n="a",r={href:t.meta.path},o={},a=[]),t.meta.pathType===y&&(n="router-link",r={},o={to:t.meta.path},a=["router-link"]),e(n,{attrs:r,props:o,class:a},[t.name])}function i(e){var t=e.indexOf("#");return-1===t?e:e.slice(0,t)}function s(e){if(void 0!==e)return"/"!==e[0]&&(e="/"+e),"/"===e[e.length-1]&&(e=e.slice(0,-1)),e}function u(e){if(void 0!==e)return"#"!==e[0]&&(e="#"+e),e}function l(e,t){var n=u(e.element),r=s(e.route);if(void 0===t){if(void 0===n&&void 0===r)return{path:void 0,pathType:g};if(void 0!==r)return{path:r,pathType:y};if(void 0!==n)return{path:n,pathType:m}}if(t.meta.pathType===y&&void 0!==r){return{path:i(t.meta.path)+r,pathType:y}}if(t.meta.pathType===y&&void 0!==n){return{path:i(t.meta.path)+n,pathType:y}}if(t.meta.pathType===y&&void 0===n&&void 0===r){return{path:i(t.meta.path),pathType:y}}return t.meta.pathType===m&&void 0!==r?{path:r,pathType:y}:t.meta.pathType===m&&void 0!==n?{path:n,pathType:m}:t.meta.pathType===m&&void 0===n&&void 0===r?{path:void 0,pathType:g}:t.meta.pathType===g&&void 0!==r?{path:r,pathType:y}:t.meta.pathType===g&&void 0!==n?{path:n,pathType:m}:t.meta.pathType===g&&void 0===n&&void 0===r?{path:void 0,pathType:g}:void 0}function d(e,t){return e.forEach(function(e){e.meta=l(e,t),e.hasOwnProperty("children")&&(e.children=d(e.children,e))}),e}function f(e,t,n,r){var i=[];return t.forEach(function(t){var s=a(e,t);t.hasOwnProperty("children")?i.push(e(p.default,{props:{level:n,defaultOpenLevel:r}},[s].concat(o(f(e,t.children,n+1,r))))):i.push(e("li",[s]))}),i}Object.defineProperty(t,"__esModule",{value:!0});var c=n(9),p=r(c),v=n(18),h=r(v),g=h.default.PATH_TYPE_NONE,m=h.default.PATH_TYPE_ELEMENT,y=h.default.PATH_TYPE_ROUTE;t.default={sanitizeRoute:s,sanitizeElement:u,removeElementFromPath:i,getItemMetadata:l,insertMetadataToItems:d,generateLevel:f}},function(e,t,n){"use strict";function r(e){n(10)}Object.defineProperty(t,"__esModule",{value:!0});var o=n(3),a=n.n(o);for(var i in o)"default"!==i&&function(e){n.d(t,e,function(){return o[e]})}(i);var s=n(17),u=n(2),l=r,d=u(a.a,s.a,!1,l,null,null);t.default=d.exports},function(e,t,n){var r=n(11);"string"==typeof r&&(r=[[e.i,r,""]]),r.locals&&(e.exports=r.locals);n(1)("4d090b5a",r,!0)},function(e,t,n){t=e.exports=n(0)(void 0),t.push([e.i,".navigation-list.closed li,.navigation-list.closed ul{display:none}",""])},function(e,t){e.exports=function(e,t){for(var n=[],r={},o=0;o<t.length;o++){var a=t[o],i=a[0],s=a[1],u=a[2],l=a[3],d={id:e+":"+o,css:s,media:u,sourceMap:l};r[i]?r[i].parts.push(d):n.push(r[i]={id:i,parts:[d]})}return n}},function(e,t,n){"use strict";function r(e){n(14)}Object.defineProperty(t,"__esModule",{value:!0});var o=n(4),a=n.n(o);for(var i in o)"default"!==i&&function(e){n.d(t,e,function(){return o[e]})}(i);var s=n(16),u=n(2),l=r,d=u(a.a,s.a,!1,l,null,null);t.default=d.exports},function(e,t,n){var r=n(15);"string"==typeof r&&(r=[[e.i,r,""]]),r.locals&&(e.exports=r.locals);n(1)("3da26586",r,!0)},function(e,t,n){t=e.exports=n(0)(void 0),t.push([e.i,".navigation-toggle{position:relative;top:-3px;padding:6px;cursor:pointer}.navigation-toggle .navigation-toggle-icon{display:inline-block;padding:3px;border:solid #000;border-width:0 2px 2px 0;transform:rotate(45deg)}.navigation-toggle.closed .navigation-toggle-icon{transform:rotate(-45deg)}",""])},function(e,t,n){"use strict";var r=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("span",{staticClass:"navigation-toggle",class:e.classes},[n("span",{staticClass:"navigation-toggle-icon"})])},o=[],a={render:r,staticRenderFns:o};t.a=a},function(e,t,n){"use strict";var r=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("ul",{staticClass:"navigation-list",class:e.classes},[n("navigation-toggle",{attrs:{isClosed:e.closed},nativeOn:{click:function(t){e.toggle(t)}}}),e._v(" "),e._t("default")],2)},o=[],a={render:r,staticRenderFns:o};t.a=a},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={PATH_TYPE_NONE:"none",PATH_TYPE_ELEMENT:"element",PATH_TYPE_ROUTE:"route"}},function(e,t,n){var r=n(20);"string"==typeof r&&(r=[[e.i,r,""]]),r.locals&&(e.exports=r.locals);n(1)("7915500d",r,!0)},function(e,t,n){t=e.exports=n(0)(void 0),t.push([e.i,".tree-navigation{display:inline-block}.tree-navigation ul{padding-left:15px;font-weight:700;line-height:30px;text-align:left;list-style-type:none}.tree-navigation ul li{padding-left:40px;font-weight:400}.tree-navigation>ul{padding-left:0}",""])}])});
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+function install(Vue, options) {
+  var bodyScrollEl = {};
+
+  // For ff, ie
+  Object.defineProperty(bodyScrollEl, 'scrollTop', {
+    get: function get() {
+      return document.body.scrollTop || document.documentElement.scrollTop;
+    },
+    set: function set(val) {
+      document.body.scrollTop = val;
+      document.documentElement.scrollTop = val;
+    }
+  });
+
+  Object.defineProperty(bodyScrollEl, 'scrollHeight', {
+    get: function get() {
+      return document.body.scrollHeight || document.documentElement.scrollHeight;
+    }
+  });
+
+  Object.defineProperty(bodyScrollEl, 'offsetHeight', {
+    get: function get() {
+      return window.innerHeight;
+    }
+  });
+
+  var scrollSpyContext = '@@scrollSpyContext';
+  var scrollSpyElements = {};
+  var scrollSpySections = {};
+  var activeElement = {};
+  var activableElements = {};
+  var currentIndex = {};
+
+  options = Object.assign({
+    allowNoActive: false,
+    data: null,
+    offset: 0,
+    time: 200,
+    steps: 30,
+    active: {
+      selector: null,
+      class: 'active'
+    },
+    link: {
+      selector: 'a'
+    }
+  }, options || {});
+
+  function findElements(container, selector) {
+    if (!selector) {
+      return container.children;
+    }
+
+    var id = scrollSpyId(container);
+
+    var elements = [];
+
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = container.querySelectorAll(selector)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var el = _step.value;
+
+        // Filter out elements that are owned by another directive
+        if (scrollSpyIdFromAncestors(el) === id) {
+          elements.push(el);
+        }
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+
+    return elements;
+  }
+
+  function scrollSpyId(el) {
+    return el.getAttribute('data-scroll-spy-id') || el.getAttribute('scroll-spy-id') || 'default';
+  }
+
+  function scrollSpyIdDefined(el) {
+    return !!el.getAttribute('data-scroll-spy-id') || !!el.getAttribute('scroll-spy-id');
+  }
+
+  function scrollSpyIdFromAncestors(el) {
+    do {
+      if (scrollSpyIdDefined(el)) {
+        return scrollSpyId(el);
+      }
+      el = el.parentElement;
+    } while (el);
+    return 'default';
+  }
+
+  function initScrollSections(el, selector) {
+    var id = scrollSpyId(el);
+    var idScrollSections = findElements(el, selector);
+    scrollSpySections[id] = idScrollSections;
+
+    if (idScrollSections[0] && idScrollSections[0].offsetParent !== el) {
+      el[scrollSpyContext].eventEl = window;
+      el[scrollSpyContext].scrollEl = bodyScrollEl;
+    }
+  }
+
+  function getOffsetTop(elem, untilParent) {
+    var offsetTop = 0;
+    do {
+      if (!isNaN(elem.offsetTop)) {
+        offsetTop += elem.offsetTop;
+      }
+      elem = elem.offsetParent;
+    } while (elem && elem !== untilParent);
+    return offsetTop;
+  }
+
+  function scrollTo(el, index) {
+    var id = scrollSpyId(el);
+    var idScrollSections = scrollSpySections[id];
+
+    var _el$scrollSpyContext = el[scrollSpyContext],
+        scrollEl = _el$scrollSpyContext.scrollEl,
+        options = _el$scrollSpyContext.options;
+
+    var current = scrollEl.scrollTop;
+
+    if (idScrollSections[index]) {
+      var target = getOffsetTop(idScrollSections[index]) - options.offset;
+      var time = options.time;
+      var steps = options.steps;
+      var timems = parseInt(time / steps);
+      var gap = target - current;
+
+      var _loop = function _loop(i) {
+        var pos = current + gap / steps * i;
+        setTimeout(function () {
+          scrollEl.scrollTop = pos;
+        }, timems * i);
+      };
+
+      for (var i = 0; i <= steps; i++) {
+        _loop(i);
+      }
+    }
+  }
+
+  Vue.directive('scroll-spy', {
+    bind: function bind(el, binding, vnode) {
+      function onScroll() {
+        var id = scrollSpyId(el);
+        var idScrollSections = scrollSpySections[id];
+
+        var _el$scrollSpyContext2 = el[scrollSpyContext],
+            scrollEl = _el$scrollSpyContext2.scrollEl,
+            options = _el$scrollSpyContext2.options;
+
+
+        var index = void 0;
+
+        if (scrollEl.offsetHeight + scrollEl.scrollTop >= scrollEl.scrollHeight - 10) {
+          index = idScrollSections.length;
+        } else {
+          for (index = 0; index < idScrollSections.length; index++) {
+            if (getOffsetTop(idScrollSections[index], scrollEl) - options.offset > scrollEl.scrollTop) {
+              break;
+            }
+          }
+        }
+
+        index = index - 1;
+
+        if (index < 0) {
+          index = options.allowNoActive ? null : 0;
+        } else if (options.allowNoActive && index >= idScrollSections.length - 1 && getOffsetTop(idScrollSections[index]) + idScrollSections[index].offsetHeight < scrollEl.scrollTop) {
+          index = null;
+        }
+
+        if (index !== currentIndex[id]) {
+          var idActiveElement = activeElement[id];
+          if (idActiveElement) {
+            idActiveElement.classList.remove(idActiveElement[scrollSpyContext].options.class);
+            activeElement[id] = null;
+          }
+
+          currentIndex[id] = index;
+          if (typeof currentIndex !== 'undefined') {
+            idActiveElement = activableElements[id][currentIndex[id]];
+            activeElement[id] = idActiveElement;
+
+            if (idActiveElement) {
+              idActiveElement.classList.add(idActiveElement[scrollSpyContext].options.class);
+            }
+          }
+
+          if (options.data) {
+            Vue.set(vnode.context, options.data, index);
+          }
+        }
+      }
+
+      vnode.context.$scrollTo = scrollTo.bind(null, el);
+
+      var id = scrollSpyId(el);
+
+      el[scrollSpyContext] = {
+        onScroll: onScroll,
+        options: Object.assign({}, options, binding.value),
+        id: scrollSpyId(el),
+        eventEl: el,
+        scrollEl: el
+      };
+
+      scrollSpyElements[id] = el;
+    },
+    inserted: function inserted(el) {
+      initScrollSections(el);
+
+      var _el$scrollSpyContext3 = el[scrollSpyContext],
+          eventEl = _el$scrollSpyContext3.eventEl,
+          onScroll = _el$scrollSpyContext3.onScroll;
+
+      eventEl.addEventListener('scroll', onScroll);
+
+      onScroll();
+    },
+    componentUpdated: function componentUpdated(el) {
+      initScrollSections(el);
+
+      var onScroll = el[scrollSpyContext].onScroll;
+
+
+      onScroll();
+    },
+    unbind: function unbind(el) {
+      var _el$scrollSpyContext4 = el[scrollSpyContext],
+          eventEl = _el$scrollSpyContext4.eventEl,
+          onScroll = _el$scrollSpyContext4.onScroll;
+
+      eventEl.removeEventListener('scroll', onScroll);
+    }
+  });
+
+  function scrollSpyActive(el, binding) {
+    var activeOptions = Object.assign({}, options.active, binding.value);
+    initScrollActiveElement(el, activeOptions);
+  }
+
+  function initScrollActiveElement(el, activeOptions) {
+    var id = scrollSpyId(el);
+    activableElements[id] = findElements(el, activeOptions.selector);
+    Array.from(activableElements[id]).map(function (el) {
+      el[scrollSpyContext] = {
+        options: activeOptions
+      };
+    });
+  }
+
+  Vue.directive('scroll-spy-active', {
+    inserted: scrollSpyActive,
+    componentUpdated: scrollSpyActive
+  });
+
+  function scrollLinkClickHandler(index, scrollSpyId, event) {
+    scrollTo(scrollSpyElements[scrollSpyId], index);
+  }
+
+  function initScrollLink(el, selector) {
+    var id = scrollSpyId(el);
+
+    var linkElements = findElements(el, selector);
+
+    for (var i = 0; i < linkElements.length; i++) {
+      var linkElement = linkElements[i];
+
+      var listener = scrollLinkClickHandler.bind(null, i, id);
+      if (!linkElement[scrollSpyContext]) {
+        linkElement[scrollSpyContext] = {};
+      }
+
+      if (!linkElement[scrollSpyContext].click) {
+        linkElement.addEventListener('click', listener);
+        linkElement[scrollSpyContext].click = listener;
+      }
+    }
+  }
+
+  Vue.directive('scroll-spy-link', {
+    inserted: function inserted(el, binding) {
+      var linkOptions = Object.assign({}, options.link, binding.value);
+      initScrollLink(el, linkOptions.selector);
+    },
+    componentUpdated: function componentUpdated(el, binding) {
+      var linkOptions = Object.assign({}, options.link, binding.value);
+      initScrollLink(el, linkOptions.selector);
+    },
+    unbind: function unbind(el) {
+      var linkElements = findElements(el);
+
+      for (var i = 0; i < linkElements.length; i++) {
+        var linkElement = linkElements[i];
+        var id = scrollSpyId(el);
+        var listener = scrollLinkClickHandler.bind(null, i, id);
+        if (!linkElement[scrollSpyContext]) {
+          linkElement[scrollSpyContext] = {};
+        }
+
+        if (linkElement[scrollSpyContext].click) {
+          linkElement.removeEventListener('click', listener);
+          delete linkElement[scrollSpyContext]['click'];
+        }
+      }
+    }
+  });
+}
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var disposed = false
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(57)
+var __vue_script__ = __webpack_require__(59)
 /* template */
-var __vue_template__ = __webpack_require__(58)
+var __vue_template__ = __webpack_require__(60)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -71119,7 +71473,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 57 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71231,7 +71585,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 58 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -71508,15 +71862,15 @@ if (false) {
 }
 
 /***/ }),
-/* 59 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(60)
+var __vue_script__ = __webpack_require__(62)
 /* template */
-var __vue_template__ = __webpack_require__(61)
+var __vue_template__ = __webpack_require__(63)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -71555,7 +71909,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 60 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71584,7 +71938,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 61 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -71627,7 +71981,7 @@ if (false) {
 }
 
 /***/ }),
-/* 62 */
+/* 64 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

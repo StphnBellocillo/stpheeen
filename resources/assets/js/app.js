@@ -19,6 +19,9 @@ import Vue2Filters from 'vue2-filters'
 import VueUpload from '@websanova/vue-upload'
 import vSelect from "vue-select"
 import Toasted from 'vue-toasted'
+import VueTreeNavigation from 'vue-tree-navigation';
+import Scrollspy from 'vue2-scrollspy';
+
 
 var toastOptions = {
 	position : 'top-right',
@@ -28,7 +31,6 @@ var toastOptions = {
 	// fullWidth : true
 
 }
-
 
 Vue.use(Toasted,toastOptions, { router })
 
@@ -40,6 +42,8 @@ Vue.use(VueSweetAlert)
 Vue.use(VueGoodTable)
 Vue.use(VueUpload)
 Vue.use(vSelect)
+Vue.use(VueTreeNavigation);
+Vue.use(Scrollspy);
 
 
 /**

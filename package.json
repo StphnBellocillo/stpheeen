@@ -21,7 +21,11 @@
     },
     "dependencies": {
         "@websanova/vue-upload": "^0.2.14-beta",
+        "bootstrap-vue": "^2.0.0-rc.2",
+        "dynamic-scrollspy": "^0.1.2",
         "js-linq": "^1.6.0",
+        "scrolltrigger-classes": "^0.3.6",
+        "vue-2-crumbs": "^0.4.3",
         "vue-good-table": "^1.20.2",
         "vue-localstorage": "^0.6.1",
         "vue-resource": "^1.5.0",
@@ -29,7 +33,9 @@
         "vue-select": "^2.4.0",
         "vue-sweetalert": "^0.1.18",
         "vue-toasted": "^1.1.24",
+        "vue-tree-navigation": "^2.0.0",
         "vue2": "^1.0.0",
-        "vue2-filters": "^0.3.0"
+        "vue2-filters": "^0.3.0",
+        "vue2-scrollspy": "^2.1.1"
     }
 }

@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" type="text/css" href="/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Exo+2:300" rel="stylesheet">
-  <base href="/" />
+  <script src="/../public/js/vendor/bootstrap.js"></script> 
+  <script src="/../public/js/vendor/jquery.js"></script>
   {{--   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> --}}
 
   <!-- <script>
@@ -29,10 +30,9 @@
 
 
         <!-- content panel -->
-        <div class="main-panel">
   
     @yield('content')
-</div>
+
 {{-- </div> --}}
 
 
@@ -42,6 +42,7 @@
 <script type="text/javascript" src="/js/app.js"></script>
 
 <script type="text/javascript">
+
     app = $('.app');
     isChatOpen = false;
     isSearchOpen = false;
@@ -56,24 +57,7 @@
         smallMenu();
     }
     /* Sidebar panel */
-    function sidebarPanel() {
-
-        $('[data-toggle=offscreen]').on('click', function (e) {
-          alert("Adsad")
-          e.preventDefault();
-          e.stopPropagation();
-          offscreenDirection = $(this).data('move') ? $(this).data('move') : 'ltr';
-          if (offscreenDirection === 'rtl') {
-            offscreenDirectionClass = 'move-right';
-        } else {
-            offscreenDirectionClass = 'move-left';
-        }
-        if (rapidClickCheck) {
-            return;
-        }
-        rapidClickCheck = true;
-        toggleMenu();
-    });
+  
         $('.main-panel').on('click', function (e) {
           var target = e.target;
           if (isOffscreenOpen && target !== $('[data-toggle=offscreen]')) {
@@ -81,38 +65,7 @@
         }
     });
         /* Sidebar sub-menus */
-        $('.sidebar-panel nav a').on('click', function (e) {
-            console.log("click nav link");
-            var $this = $(this),
-            links = $this.parents('li'),
-            parentLink = $this.closest('li'),
-            otherLinks = $('.sidebar-panel nav li').not(links),
-            subMenu = $this.next();
-            if (!subMenu.hasClass('sub-menu')) {
-                console.log('has class no sub-menu')
-                toggleMenu();
-                return;
-            }
-            if (app.hasClass('layout-small-menu') && parentLink.parent().hasClass('nav') && $(window).width() > 768) {
-                console.log('width > 768')
-                return;
-            }
-            otherLinks.removeClass('open');
-            if (subMenu.is('ul') && (subMenu.height() === 0)) {
-                parentLink.addClass('open');
-            } else if (subMenu.is('ul') && (subMenu.height() !== 0)) {
-                parentLink.removeClass('open');
-            }
-            if ($this.attr('href') === '#') {
-                e.preventDefault();
-            }
-            updateScrollbars();
-            if (subMenu.is('ul')) {
-                return false;
-            }
-            e.stopPropagation();
-            return true;
-        });
+      
         $('.sidebar-panel').find('> li > .sub-menu').each(function () {
           if ($(this).find('ul.sub-menu').length > 0) {
             $(this).addClass('multi-level');
